@@ -63,7 +63,7 @@ age > 21
 let friend = "Tom";
 let friendAge = 10;
 if (friend === "Tom" && friendAge === 10) {
-  console.log("VAlid Friend");
+  console.log("Valid Friend");
 }
 if (friend === "Tom" || friendAge === 10) {
   console.log("VAlid Friend");
@@ -96,3 +96,59 @@ let k = 10;
 do {
   console.log(k);
 } while (k < 10);
+
+// Arrays -reference type
+
+let a = [10, "shreya", "mango"];
+console.log(typeof a); // array in js is a object
+console.log(Array.isArray(a));
+
+let obj = {}; // object literal
+console.log(typeof obj);
+console.log(Array.isArray(obj));
+
+// Array Methods
+
+console.log(a);
+a.push("World"); //push
+console.log(a);
+let popped = a.pop(); //pop
+console.log(a);
+console.log("popped element :", popped);
+let shifted = a.shift(); // shift- removes first element
+console.log(a);
+console.log("shifted element :", shifted);
+let unshifted = a.unshift("LAkshmi"); //unshift add an element to first place
+console.log(a);
+console.log("added element :", unshifted);
+
+let a1 = [1, 2, 3];
+let a2 = a1; //copying a1 in a2
+a1.push(4); //changes will be reflected in both arrays as arrays are reference typed
+console.log(a1);
+console.log(a2);
+console.log("Are both array referring to same memory location: ", a1 === a2);
+
+// Cloning Array - so that changes in one array will not impact other array
+let a3 = [10, 20];
+let a4 = a3.slice(0); //One method to clone - use slice
+a3.push(4);
+console.log(a3);
+console.log(a4);
+console.log("Are both array referring to same memory location: ", a3 === a4);
+
+let a5 = [5, 15];
+let a6 = a5.concat(); // another method to clone - use concat
+a5.push(4);
+console.log(a5);
+console.log(a6);
+console.log("Are both array referring to same memory location: ", a5 === a6);
+
+// spread operator in arrays
+
+let a7 = [50, 100];
+let a8 = [...a7, 200, 600]; // another method to clone - use spead operator
+a7.push(4);
+console.log(a7);
+console.log(a8);
+console.log("Are both array referring to same memory location: ", a7 === a8);
