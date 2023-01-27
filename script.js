@@ -164,3 +164,15 @@ for (let index in animals) {
   console.log(index);
   console.log(animals[index]);
 }
+
+//Array destructuring
+
+let scores = [10, 20, 60, 90];
+console.log(scores);
+let [score1, score2, score3, score4, score5] = scores; //array destructuring
+console.log(score1, score2, score3, score4, score5);
+console.log(score1, score2);
+let [score1a, score2a, , score4a] = scores; //array destructuring skiiping a third element by using ','
+console.log(score1a, score2a, score4a);
+let [score1b, ...newScoreArr] = scores; //array destructuring by using a array with spread operator
+console.log(newScoreArr);
