@@ -108,7 +108,7 @@ console.log(typeof obj);
 console.log(Array.isArray(obj));
 
 // Array Methods
-
+console.log("length of array:", a.length);
 console.log(a);
 a.push("World"); //push
 console.log(a);
@@ -152,3 +152,15 @@ a7.push(4);
 console.log(a7);
 console.log(a8);
 console.log("Are both array referring to same memory location: ", a7 === a8);
+
+// For of Loop - returns values in array one by one
+let animals = ["dog", "cat", "rat", "mouse"];
+for (let animal of animals) {
+  console.log(animal);
+}
+
+// For in Loop - returns indexes of array one by one
+for (let index in animals) {
+  console.log(index);
+  console.log(animals[index]);
+}
