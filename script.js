@@ -72,8 +72,27 @@ if (friend !== "Joe") {
   console.log(" Not VAlid Friend");
 }
 // prompt takes input as string by default
-let nump = prompt("Enter number");
-console.log(nump, typeof nump);
 
-let nump2 = +prompt("Enter number");
-console.log(nump2, typeof nump2);
+// let nump = prompt("Enter number");
+// console.log(nump, typeof nump);
+
+// let nump2 = +prompt("Enter number");
+// console.log(nump2, typeof nump2);
+
+// loopings
+
+let n = 1;
+while (n < 10) {
+  console.log(n);
+  n++;
+}
+let s = 0;
+for (let m = 1; m <= 100; m++) {
+  s += m;
+}
+console.log(s);
+
+let k = 10;
+do {
+  console.log(k);
+} while (k < 10);
