@@ -53,3 +53,27 @@ office = "Simform Solutions";
 
 let placed = `I Joined the ${office} in ${doj}`;
 console.log(placed);
+
+// ternary operator
+let age = 20;
+age > 21
+  ? console.log("you are in your early 20's ")
+  : console.log("you are less than 21");
+//   And or ! operators
+let friend = "Tom";
+let friendAge = 10;
+if (friend === "Tom" && friendAge === 10) {
+  console.log("VAlid Friend");
+}
+if (friend === "Tom" || friendAge === 10) {
+  console.log("VAlid Friend");
+}
+if (friend !== "Joe") {
+  console.log(" Not VAlid Friend");
+}
+// prompt takes input as string by default
+let nump = prompt("Enter number");
+console.log(nump, typeof nump);
+
+let nump2 = +prompt("Enter number");
+console.log(nump2, typeof nump2);
