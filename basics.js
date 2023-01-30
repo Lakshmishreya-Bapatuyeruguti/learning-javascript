@@ -198,3 +198,11 @@ console.log(numSet);
 if (numSet.has(105)) {
   console.log("hurray");
 }
+
+//Map as data structure
+
+let mapItems = new Map();
+mapItems.set("fname", "shreya");
+console.log(mapItems);
+mapItems.set(1, 15);
+console.log(mapItems);
