@@ -91,3 +91,27 @@ const [{ firstName: u1Name, place: u1Place }, , { age: u3Age }] = arrObj;
 console.log(u1Name);
 console.log(u1Place);
 console.log(u3Age);
+
+//optional chaining -?.
+const demoObj = {
+  userId: 1,
+  userName: "Lakshmi",
+  userHobbies: { mostFav: "writing", fav: "listening music" },
+};
+console.log(demoObj?.userName);
+console.log(demoObj?.userHobbies?.leastFav);
+
+//Methods - functions inside an object
+
+const demoObj2 = {
+  userId: 1,
+  userName: "Lakshmi",
+  userHobbies: { mostFav: "writing", fav: "listening music" },
+  about: function () {
+    console.log("Hii from Function inside of object/method");
+    console.log(
+      `values are : Name: ${this.userName} and id is: Id:${this.userId}`
+    );
+  },
+};
+demoObj2.about();
