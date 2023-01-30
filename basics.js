@@ -1,5 +1,7 @@
 // "use strict";
 
+// Type of and variable declaration
+
 document.getElementById("greet").innerHTML += "World";
 console.log("Hello ");
 var fname = "lakshmi";
@@ -178,7 +180,9 @@ console.log(scores);
 let [score1, score2, score3, score4, score5] = scores; //array destructuring
 console.log(score1, score2, score3, score4, score5);
 console.log(score1, score2);
-let [score1a, score2a, , score4a] = scores; //array destructuring skiiping a third element by using ','
+// array destructuring skiiping a third element by using ','
+let [score1a, score2a, , score4a] = scores;
 console.log(score1a, score2a, score4a);
-let [score1b, ...newScoreArr] = scores; //array destructuring by using a array with spread operator
+//array destructuring by using a array with spread operator
+let [score1b, ...newScoreArr] = scores;
 console.log(newScoreArr);
