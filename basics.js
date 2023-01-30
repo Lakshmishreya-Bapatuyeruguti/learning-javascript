@@ -265,3 +265,10 @@ const [{ firstName: u1Name, place: u1Place }, , { age: u3Age }] = arrObj;
 console.log(u1Name);
 console.log(u1Place);
 console.log(u3Age);
+
+let n5 = 56;
+console.log(typeof n5, n5);
+let str = n5 + "";
+console.log(typeof str);
+console.log(+str);
+console.log(typeof +str);
