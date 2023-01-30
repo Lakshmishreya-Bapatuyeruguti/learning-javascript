@@ -186,3 +186,15 @@ console.log(score1a, score2a, score4a);
 //array destructuring by using a array with spread operator
 let [score1b, ...newScoreArr] = scores;
 console.log(newScoreArr);
+
+//sets
+
+let numSet = new Set();
+numSet.add(5);
+numSet.add(10);
+numSet.add(51);
+numSet.add(105);
+console.log(numSet);
+if (numSet.has(105)) {
+  console.log("hurray");
+}
