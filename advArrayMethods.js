@@ -6,6 +6,7 @@ function mulByTen(number) {
   console.log(number * 10);
 }
 // mulByTen is callback function
+
 // One way- creating function externally and then calling it in forEach
 numbers.forEach(mulByTen);
 
@@ -17,3 +18,18 @@ numbers.forEach(function (number) {
 numbers.forEach((number) => {
   console.log(number * 100);
 });
+
+//Map Method -takes callback and returns new array and return keyword is must
+
+const newArr = numbers.map((number) => {
+  return number * 2;
+});
+console.log(numbers);
+console.log(newArr);
+
+//Filter method
+
+const filtered = numbers.filter((number) => {
+  return number % 2 == 0;
+});
+console.log(filtered);
