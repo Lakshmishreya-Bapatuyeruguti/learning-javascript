@@ -71,5 +71,20 @@ btn.addEventListener("click", function () {
 //  keyboard press event listener
 document.addEventListener("keydown", (event) => {
   const keyPressed = document.querySelector(".pTag2");
+  console.log(event);
   keyPressed.innerHTML += ` ${event.key}`;
+});
+document.addEventListener("keypress", (event) => {
+  const keyPressed = document.querySelector(".pTag3");
+  console.log(event);
+  keyPressed.innerHTML += ` ${event.key}`;
+});
+
+//submit event
+
+const formSelect = document.querySelector(".formType");
+const submittedVal = document.querySelector(".formType input[type='text']");
+formSelect.addEventListener("submit", (event) => {
+  event.preventDefault();
+  console.log(submittedVal.value);
 });
