@@ -59,5 +59,17 @@ function changeColFun() {
   document.getElementById("btn").style.backgroundColor = "blue";
   document.getElementById("btn").style.color = "white ";
 }
+//to change button style on click with eventListener - click
+const btn = document.querySelector(".btnType2");
+btn.addEventListener("click", function () {
+  btn.style.backgroundColor = "seagreen";
+  btn.style.color = "white ";
+  // this in event listeners
+  console.log(this.value);
+});
 
-//to change button style on click with eventListener
+//  keyboard press event listener
+document.addEventListener("keydown", (event) => {
+  const keyPressed = document.querySelector(".pTag2");
+  keyPressed.innerHTML += ` ${event.key}`;
+});
