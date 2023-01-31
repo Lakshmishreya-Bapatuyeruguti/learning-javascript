@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+}
+.hello,
+.pTag,
+.buttonContainer {
+  text-align: center;
+  margin: 2%;
+}
+.btnType {
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  background-color: black;
+  color: whitesmoke;
+}
