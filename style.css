@@ -5,7 +5,9 @@
 }
 .hello,
 .pTag,
-.buttonContainer {
+.buttonContainer,
+.list,
+.secHeading {
   text-align: center;
   margin: 2%;
 }
@@ -15,4 +17,20 @@
   border: none;
   background-color: black;
   color: whitesmoke;
+}
+.list {
+  list-style: none;
+}
+.item {
+  color: cornflowerblue;
+  /* font-weight: 600; */
+  margin: 5px 0;
+  font-size: 30px;
+}
+.welcome {
+  color: olive;
+  background-color: lightseagreen;
+}
+.secHeading {
+  color: rgb(3, 3, 71);
 }
