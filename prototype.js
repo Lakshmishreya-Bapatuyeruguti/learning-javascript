@@ -4,6 +4,8 @@ function CreateUser(nickname, dob) {
   this.nName = nickname;
   this.birthday = dob;
 }
+// prototype
+
 CreateUser.prototype.about = function () {
   return `Nickname is ${this.nName}`;
 };
