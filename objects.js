@@ -115,3 +115,14 @@ const demoObj2 = {
   },
 };
 demoObj2.about();
+
+//objects create method
+const objType = {
+  k1: "v1",
+  k2: "v2",
+  k3: "v3",
+};
+const objType2 = Object.create(objType);
+objType2.k4 = "v4";
+//objType2 refers to objType because of [[prototype]]
+console.log(objType2);
