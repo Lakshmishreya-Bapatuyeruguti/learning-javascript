@@ -55,9 +55,18 @@ let info = document.querySelector("#btn").getBoundingClientRect();
 console.log(info);
 
 // to change button style on click without eventListener
+function bgColor() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r},${g},${b})`;
+}
 function changeColFun() {
-  document.getElementById("btn").style.backgroundColor = "blue";
-  document.getElementById("btn").style.color = "white ";
+  // document.getElementById("btn").style.backgroundColor = "blue";
+  // document.getElementById("btn").style.color = "white ";
+  const bg = bgColor();
+  console.log(bg);
+  document.body.style.background = `${bg}`;
 }
 //to change button style on click with eventListener - click
 const btn = document.querySelector(".btnType2");

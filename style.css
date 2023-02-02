@@ -1,7 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: beige;
+}
+body {
+  background-color: rgb(252, 252, 244);
 }
 .hello,
 .pTag,
