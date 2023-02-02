@@ -110,3 +110,37 @@ alertPromise
     // console.log(data[1].name);
   })
   .catch((error) => console.log(error));
+
+// using promises to tackle callback hell
+
+function changeColor(element, color, time) {
+  return new Promise(function (resolve, reject) {
+    if (element) {
+      resolve(
+        setTimeout(() => {
+          element.style.color = color;
+        }, time)
+      );
+    } else {
+      reject(new Error("Element not found"));
+    }
+  });
+}
+
+changeColor(firstHead, "red", 1000)
+  .then(() => {
+    changeColor(Head2, "green", 2000);
+  })
+  .catch((err) => console.log(err))
+  .then(() => {
+    changeColor(Head9, "blue", 3000);
+  })
+  .catch((err) => console.log(err))
+  .then(() => {
+    changeColor(Head4, "yellow", 4000);
+  })
+  .catch((err) => console.log(err))
+  .then(() => {
+    changeColor(Head5, "orange", 5000);
+  })
+  .catch((err) => console.log(err));
